@@ -107,3 +107,8 @@ body {
 #display {
     text-align: center;
 }
+
+html,
+body {
+  overflow: hidden;
+}
