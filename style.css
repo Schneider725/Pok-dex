@@ -125,10 +125,12 @@ body {
   #random {
     display: block;
     margin-left: 100px;
+    font-size: medium;
   }
   #search {
     display: block;
     margin-left: 100px;
     margin-bottom: 1rem;
+    font-size: medium;
   }
 }
