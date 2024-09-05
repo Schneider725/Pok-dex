@@ -81,6 +81,7 @@ textarea:not([rows]) {
 
 :root {
     --red: #e63f35;
+    --green: #1d7940;
 }
 
 h1{
@@ -117,19 +118,25 @@ body {
 }
 
 @media (max-width: 450px) {
+  #wrapper {
+    margin-top: 3rem;
+  }
   #input {
+    margin-top: 5rem;
+    width: 80%;
     display: block;
+    margin: 0 auto;
     margin-bottom: 1rem;
     text-align: center;
   }
   #random {
     display: block;
-    margin-left: 100px;
+    margin-left: 110px;
     font-size: medium;
   }
   #search {
     display: block;
-    margin-left: 100px;
+    margin-left: 110px;
     margin-bottom: 1rem;
     font-size: medium;
   }
