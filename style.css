@@ -124,11 +124,11 @@ body {
   }
   #random {
     display: block;
-    margin-left: 120px;
+    margin-left: 100px;
   }
   #search {
     display: block;
-    margin-left: 120px;
+    margin-left: 100px;
     margin-bottom: 1rem;
   }
 }
