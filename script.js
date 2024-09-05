@@ -1,7 +1,8 @@
 async function getPokemon(pokemon) {
+  const poke = pokemon.toLowerCase();
   try {
     const response = await fetch(
-      `https://pokeapi.co/api/v2/pokemon/${pokemon}`
+      `https://pokeapi.co/api/v2/pokemon/${poke}`
     );
     const data = await response.json();
     console.log(data);
