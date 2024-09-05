@@ -112,3 +112,6 @@ html,
 body {
   overflow: hidden;
 }
+#pokename {
+  text-align: center;
+}

@@ -5,34 +5,32 @@ async function getPokemon(pokemon) {
     );
     const data = await response.json();
     console.log(data);
-    pokename.innerText = data.name
+    pokename.innerText = `Pokedex Number : ${data.id} \n ${data.name}`;
     display.innerText = "";
     for (let i = 0; i < data.types.length; i++) {
       display.innerText += `${data.types[i].type.name} \n`;
     }
-    sprite.src = data.sprites.front_default
+    sprite.src = data.sprites.front_default;
   } catch {
-     display.innerText = 'Not a valid pokemon'
+    display.innerText = "Not a valid pokemon";
     // throw new Error("this is not a valid pokemon");
   }
 }
 
-async function getRandom(pokemon) {
-  const num = Math.floor(Math.random() * 151);
+async function getRandom() {
+  const num = Math.floor(Math.random() * 1025);
   try {
-    const response = await fetch(
-      `https://pokeapi.co/api/v2/pokemon/${num}`
-    );
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${num}`);
     const data = await response.json();
     console.log(data);
-    pokename.innerText = data.name;
+    pokename.innerText = `Pokedex Number : ${data.id} \n ${data.name}`;
     display.innerText = "";
     for (let i = 0; i < data.types.length; i++) {
       display.innerText += `${data.types[i].type.name} \n`;
     }
-    sprite.src = data.sprites.front_default
+    sprite.src = data.sprites.front_default;
   } catch {
-     display.innerText = 'Not a valid pokemon'
+    display.innerText = "Not a valid pokemon";
     // throw new Error("this is not a valid pokemon");
   }
 }
@@ -40,9 +38,9 @@ async function getRandom(pokemon) {
 const search = document.getElementById("search");
 const input = document.getElementById("input");
 const display = document.getElementById("display");
-const sprite = document.getElementById('sprite')
-const random = document.getElementById('random')
-const pokename = document.getElementById('pokename')
+const sprite = document.getElementById("sprite");
+const random = document.getElementById("random");
+const pokename = document.getElementById("pokename");
 
 search.addEventListener("click", () => {
   const pokemon = input.value;
@@ -58,6 +56,6 @@ input.addEventListener("keydown", (event) => {
   }
 });
 
-random.addEventListener('click', getRandom)
+random.addEventListener("click", getRandom);
 
-getPokemon('bulbasaur')
+getPokemon("bulbasaur");
