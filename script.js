@@ -47,10 +47,13 @@ async function getRandom() {
 function changeColor(color) {
   if(color == 'fire') {
     document.body.style.backgroundImage = `linear-gradient(#e7242f,white)`
+    theme.setAttribute('content', '#e7242f')
   } else if(color == 'water') {
     document.body.style.backgroundImage = `linear-gradient(#287fed,white)`
+    theme.setAttribute('content', '#287fed')
   } else if(color == 'grass') {
     document.body.style.backgroundImage = `linear-gradient(#429f2a,white)`
+    theme.setAttribute('content', '#429f2a')
   } else if(color == 'flying') {
      document.body.style.backgroundImage = `linear-gradient(##7fb9ef,white)`
   }else if (color == 'poison') {
@@ -90,6 +93,7 @@ const display = document.getElementById("display");
 const sprite = document.getElementById("sprite");
 const random = document.getElementById("random");
 const pokename = document.getElementById("pokename");
+const theme = document.getElementById('theme')
 
 search.addEventListener("click", () => {
   const pokemon = input.value;
