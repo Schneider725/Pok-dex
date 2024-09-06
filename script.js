@@ -12,7 +12,12 @@ async function getPokemon(pokemon) {
       display.innerText += `${data.types[i].type.name} \n`;
     }
     sprite.src = data.sprites.front_default;
+
+    const color = data.types[0].type.name;
+
+    changeColor(color)
   } catch {
+    pokename.innerText = `???`;
     display.innerText = "Not a valid pokemon";
     // throw new Error("this is not a valid pokemon");
   }
@@ -30,12 +35,55 @@ async function getRandom() {
       display.innerText += `${data.types[i].type.name} \n`;
     }
     sprite.src = data.sprites.front_default;
+
+    const color = data.types[0].type.name;
+    changeColor(color)
   } catch {
     display.innerText = "Not a valid pokemon";
     // throw new Error("this is not a valid pokemon");
   }
 }
 
+function changeColor(color) {
+  if(color == 'fire') {
+    document.body.style.backgroundImage = `linear-gradient(#e7242f,white)`
+  } else if(color == 'water') {
+    document.body.style.backgroundImage = `linear-gradient(#287fed,white)`
+  } else if(color == 'grass') {
+    document.body.style.backgroundImage = `linear-gradient(#429f2a,white)`
+  } else if(color == 'flying') {
+     document.body.style.backgroundImage = `linear-gradient(##7fb9ef,white)`
+  }else if (color == 'poison') {
+    document.body.style.backgroundImage = `linear-gradient(#9241c9,white)`
+  }else if (color == 'electric') {
+    document.body.style.backgroundImage = `linear-gradient(#f9bf00,white)`
+  }else if (color == 'fairy') {
+    document.body.style.backgroundImage = `linear-gradient(#ec72ec,white)`
+  }else if (color == 'bug') {
+    document.body.style.backgroundImage = `linear-gradient(#91a025,white)`
+  }else if (color == 'fighting') {
+    document.body.style.backgroundImage = `linear-gradient(#ff8000,white)`
+  }else if (color == 'ground') {
+    document.body.style.backgroundImage = `linear-gradient(#8f5020,white)`
+  }else if (color == 'rock') {
+    document.body.style.backgroundImage = `linear-gradient(#adab7a,white)`
+  }else if (color == 'psychic') {
+    document.body.style.backgroundImage = `linear-gradient(#f23f79,white)`
+  }else if (color == 'ice') {
+    document.body.style.backgroundImage = `linear-gradient(#60c7ee,white)`
+  }else if (color == 'dragon') {
+    document.body.style.backgroundImage = `linear-gradient(#5260dc,white)`
+  }else if (color == 'ghost') {
+    document.body.style.backgroundImage = `linear-gradient(#714171,white)`
+  }else if (color == 'steel') {
+    document.body.style.backgroundImage = `linear-gradient(#62a1b4,white)`
+  }else if (color == 'dark') {
+    document.body.style.backgroundImage = `linear-gradient(#634c4f,white)`
+  }else if (color == 'normal') {
+    document.body.style.backgroundImage = `linear-gradient(#a0a09e,white)`
+  }
+
+}
 const search = document.getElementById("search");
 const input = document.getElementById("input");
 const display = document.getElementById("display");
