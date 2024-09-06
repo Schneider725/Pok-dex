@@ -55,35 +55,50 @@ function changeColor(color) {
     document.body.style.backgroundImage = `linear-gradient(#429f2a,white)`
     theme.setAttribute('content', '#429f2a')
   } else if(color == 'flying') {
-     document.body.style.backgroundImage = `linear-gradient(##7fb9ef,white)`
+     document.body.style.backgroundImage = `linear-gradient(#7fb9ef,white)`
+     theme.setAttribute('content', '#7fb9ef')
   }else if (color == 'poison') {
     document.body.style.backgroundImage = `linear-gradient(#9241c9,white)`
+    theme.setAttribute('content', '#9241c9')
   }else if (color == 'electric') {
     document.body.style.backgroundImage = `linear-gradient(#f9bf00,white)`
+    theme.setAttribute('content', '#f9bf00')
   }else if (color == 'fairy') {
     document.body.style.backgroundImage = `linear-gradient(#ec72ec,white)`
+    theme.setAttribute('content', '#ec72ec')
   }else if (color == 'bug') {
     document.body.style.backgroundImage = `linear-gradient(#91a025,white)`
+    theme.setAttribute('content', '#91a025')
   }else if (color == 'fighting') {
     document.body.style.backgroundImage = `linear-gradient(#ff8000,white)`
+    theme.setAttribute('content', '#ff8000')
   }else if (color == 'ground') {
     document.body.style.backgroundImage = `linear-gradient(#8f5020,white)`
+    theme.setAttribute('content', '#8f5020')
   }else if (color == 'rock') {
     document.body.style.backgroundImage = `linear-gradient(#adab7a,white)`
+    theme.setAttribute('content', '#adab7a')
   }else if (color == 'psychic') {
     document.body.style.backgroundImage = `linear-gradient(#f23f79,white)`
+    theme.setAttribute('content', '#f23f79')
   }else if (color == 'ice') {
     document.body.style.backgroundImage = `linear-gradient(#60c7ee,white)`
+    theme.setAttribute('content', '#60c7ee')
   }else if (color == 'dragon') {
     document.body.style.backgroundImage = `linear-gradient(#5260dc,white)`
+    theme.setAttribute('content', '#5260dc')
   }else if (color == 'ghost') {
     document.body.style.backgroundImage = `linear-gradient(#714171,white)`
+    theme.setAttribute('content', '#714171')
   }else if (color == 'steel') {
     document.body.style.backgroundImage = `linear-gradient(#62a1b4,white)`
+    theme.setAttribute('content', '#62a1b4')
   }else if (color == 'dark') {
     document.body.style.backgroundImage = `linear-gradient(#634c4f,white)`
+    theme.setAttribute('content', '#634c4f')
   }else if (color == 'normal') {
     document.body.style.backgroundImage = `linear-gradient(#a0a09e,white)`
+    theme.setAttribute('content', '#a0a09e')
   }
 
 }
